@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snap</title>
 
+    <style>
+        .container{
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll;
+            height: 100vh;
+            /* height of scroll */
+        }
+        section{
+            height: 100vh; /* height of each section */
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            scroll-snap-align: start;
+        }
+        .one{
+            background-color: rgb(32, 167, 144);
+        }
+        .two{
+            background-color: rgb(94, 98, 120);
+        }
+        .three{
+            background-color: rgb(107, 14, 70);
+        }
+        .four{
+            background-color: rgb(14, 57, 107);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="one">
+            <h1>First Page</h1>
+        </section>
+        <section class="two">
+            <h1>Second Page</h1>
+        </section>
+        <section class="three">
+            <h1>Third Page</h1>
+        </section>
+        <section class="four">
+            <h1>Fourth Page</h1>
+        </section>
+    </div>
+</body>
+</html>
